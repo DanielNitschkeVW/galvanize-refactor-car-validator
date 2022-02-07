@@ -1,9 +1,14 @@
+import { useEffect } from 'react'
 import { InputField } from './InputField'
 import FormController from '../controller/FormController'
 import './Form.css'
 
 const Form = () => {
     const { values, errors, inputChangeHandler, submitHandler, validationHandler } = FormController()
+
+    useEffect(() => {
+        document.title = `Car Validator | Make: "${values.make}", Year: "${values.year}" is ${values.isValid ? "valid" : "invalid"}`
+    })
 
     return (
         <form className="form" onSubmit={submitHandler}>

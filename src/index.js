@@ -5,7 +5,12 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <head>
+      <title>Varlidator</title>
+    </head>
+    <body>
+      <App />
+    </body>
   </React.StrictMode>,
   document.getElementById('root')
 );
