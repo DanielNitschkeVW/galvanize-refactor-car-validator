@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { baseValidator, refactoredValidator, dataDrivenValidator } from '../validation/CarValidator'
+const carValidator = dataDrivenValidator;
 
 const FormController = () => {
 
@@ -17,23 +18,23 @@ const FormController = () => {
             [name]: value
         }
         setValues(updatedValues)
-        errorChecker(updatedValues)
+        formValidator(updatedValues)
     }
 
     const submitHandler = (event) => {
         event.preventDefault()
-        errorChecker(values)
+        formValidator(values)
     }
 
     const validationHandler = (_event) => {
         Object.keys(errors).length === 0 &&
             setValues({
                 ...values,
-                isValid: dataDrivenValidator({ make: values.make, year: values.year })
+                isValid: carValidator({ make: values.make, year: values.year })
             })
     }
 
-    const errorChecker = ({ make, year }) => {
+    const formValidator = ({ make, year }) => {
         let error = {}
 
         if (!make) {
