@@ -1,0 +1,77 @@
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(116, 115, 115, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(116, 115, 115, 0.2);
+    width: 80%;
+    height: 4ch;
+    margin: 1rem;
+}
+
+.input-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.input-field-label {
+    width: 5ch;
+    height: 100%;
+    text-align: right;
+    margin-right: 1ch;
+}
+
+.input-field-element {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 5ch;
+    width: 5ch;
+    max-width: 100%;
+    height: 3ch;
+    size: 5;
+    background-color: rgb(236, 255, 255);
+}
+
+.input-error-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 98, 98, 0.9);
+    border-radius: 0.3ch;
+    height: 3ch;
+    overflow: hidden;
+}
+
+.input-error-text {
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    width: 0;
+    overflow: hidden;
+}
+
+.input-error-container:hover .input-error-text {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.input-error-icon {
+    display: block;
+    width: 3ch;
+    height: 3ch;
+    flex-shrink: 0;
+    background: url('../icons/exclamation-triangle-solid.svg');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
