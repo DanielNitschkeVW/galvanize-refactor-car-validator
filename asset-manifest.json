@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/galvanize-refactor-car-validator/static/css/main.57ba18c0.css",
-    "main.js": "/galvanize-refactor-car-validator/static/js/main.c3b5eb99.js",
+    "main.js": "/galvanize-refactor-car-validator/static/js/main.4b181b70.js",
     "index.html": "/galvanize-refactor-car-validator/index.html",
     "static/media/exclamation-triangle-solid.svg": "/galvanize-refactor-car-validator/static/media/exclamation-triangle-solid.03d439fad5cc481899c7.svg",
     "main.57ba18c0.css.map": "/galvanize-refactor-car-validator/static/css/main.57ba18c0.css.map",
-    "main.c3b5eb99.js.map": "/galvanize-refactor-car-validator/static/js/main.c3b5eb99.js.map"
+    "main.4b181b70.js.map": "/galvanize-refactor-car-validator/static/js/main.4b181b70.js.map"
   },
   "entrypoints": [
     "static/css/main.57ba18c0.css",
-    "static/js/main.c3b5eb99.js"
+    "static/js/main.4b181b70.js"
   ]
 }
