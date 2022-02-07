@@ -44,7 +44,7 @@ const FormController = () => {
             error.year = "Please enter a year"
         } else if (year.length !== 2 && year.length !== 4) {
             error.year = "Please enter a valid year of two and four digits"
-        } else if (!Number.isInteger(parseInt(year))) {
+        } else if (/.*[^\d\n]+.*/.test(year)) {
             error.year = "Please enter an integer as year"
         }
 
